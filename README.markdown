@@ -1,4 +1,7 @@
-* Quick, simple, easy captcha for Sinatra apps
+# Quick, simple, easy captcha for Sinatra apps
+
+## Installation
+    gem install sinatra-captcha
 
 <pre><code>
 require 'rubygems'
