@@ -13,11 +13,8 @@ get '/' do
 end
 
 post '/' do
-  if captcha_pass?
-    halt 401, "invalid captcha"
-  else
-    "passed!"
-  end
+  halt(401, "invalid captcha") unless captcha_pass?
+  "passed!"
 end
 
 __END__
