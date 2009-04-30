@@ -46,6 +46,6 @@ end
 desc 'Publish gem to rubyforge'
 task 'release' => [package('.gem')] do |t|
   sh <<-end
-    rubyforge add_release sinatra sinatra-captcha #{spec.version} #{package('.gem')} &&
+    rubyforge add_release sinatra sinatra-captcha #{spec.version} #{package('.gem')}
   end
 end
